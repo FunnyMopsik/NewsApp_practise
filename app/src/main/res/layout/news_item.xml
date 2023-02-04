@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardUseCompatPadding="true"
+
+    >
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            ></ImageView>
+            <TextView
+                android:id="@+id/newsHendler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hendler"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_below="@+id/newsImage"/>
+
+
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/link"
+            android:text="Visit source"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_below="@id/newsHendler"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
